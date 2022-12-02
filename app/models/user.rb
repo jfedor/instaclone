@@ -6,6 +6,8 @@ class User < ApplicationRecord
 
   has_many :posts
   has_many :likes
+  has_many :comments
+
   validates :username, presence: true
 
   def like!(post)
